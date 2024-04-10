@@ -1,0 +1,365 @@
+@charset "utf-8";
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: center;
+    background-color: rgb(202,211,217);
+    max-width: 1200px;
+}
+
+p{
+    color:rgb(21,107,44);
+}
+
+h2{
+    color:rgb(19,42,62);
+    font-size:larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform:uppercase;
+}
+
+h1{
+    font: bold 2em Times, serif;
+    color: rgb(19, 42, 62);
+    text-shadow: .05em .05em .1em gray;
+}
+#testimonials{
+    background-color: beige;
+}
+
+#Caffinated{
+    background-color: beige;
+    border: 2px solid black;
+    padding: 5px 20px;
+    margin: 10px 20px;
+}
+
+/*------NAV STYLE------*/
+
+.main_nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(19, 42, 62);
+    padding: .3em;
+    margin: 0;
+
+}
+.contact_nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(19, 42, 62);
+    padding: .3em;
+    margin: 0;
+}
+.about_nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(19, 42, 62);
+    padding: .3em;
+    margin: 0;
+}
+.menu_nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(19, 42, 62);
+    padding: .3em;
+    margin: 0;
+}
+
+/*styling our nav links*/
+/* use the .main_nav to call up what is in that element and a for the links*/
+.main_nav a{
+    color: white;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+.contact_nav a{
+    color: white;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+.about_nav a{
+    color: white;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+.menu_nav a{
+    color: white;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+
+/*hoverstyle*/
+.main_nav a:hover{
+    background-color: white;
+    color: rgb(19, 42, 62);
+}
+.contact_nav a:hover{
+    background-color: white;
+    color: rgb(19, 42, 62);
+}
+.about_nav a:hover{
+    background-color: white;
+    color: rgb(19, 42, 62);
+}
+.menu_nav a:hover{
+    background-color: white;
+    color: rgb(19, 42, 62);
+}
+
+/*add logo - push it to one side*/
+li.logo{
+    margin-right: auto;
+}
+
+/*--------HERO IMAGE/HEADER--------*/
+.hero_image{
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/coffee_shop.jpg);
+    height:500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero_header{
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+/*--------grid----------*/
+#grid{
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 100px 400px 100px;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-areas:
+        'header header  header'
+        'ads    main    sidebar'
+        'footer footer  footer'
+    ;
+}
+#item1{
+    grid-area: header;
+    background-color: seagreen;
+    font-size: 45px;
+    text-align: center;
+}
+#item2{
+    grid-area: ads;
+    background-color: white;
+    font-size: 45px;
+    text-align: center;
+}
+#item3{
+    grid-area: main;
+    background-color: gray;
+    font-size: 45px;
+    text-align: center;
+}
+#item4{
+    grid-area: sidebar;
+    background-color: skyblue;
+    font-size: 45px;
+    text-align: center;
+}
+#item5{
+    grid-area: footer;
+    background-color: salmon;
+    font-size: 45px;
+    text-align: center;
+}
+
+/*----index grid----*/
+#index_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+      'header   header  header'
+      'welcome  welcome welcome'
+      'fairtrade    organic local'
+      'about_us    about_us   about_us'
+      'product1 product2    product3'
+      'healthy_options  healthy_options healthy_options'
+      'testimonials testimonials    testimonials'
+    ;
+}
+
+#header{
+    grid-area: header;
+    text-align: center;
+}
+
+#welcome{
+    grid-area: welcome;
+    text-align: center;
+}
+
+#fairtrade{
+    grid-area: fairtrade;
+    text-align: center;
+}
+
+#organic{
+    grid-area: organic;
+    text-align: center;
+}
+
+#local{
+    grid-area: local;
+    text-align: center;
+}
+
+#about_us{
+    grid-area: about_us;
+    text-align: center;
+}
+
+#product1{
+    grid-area: product1;
+    text-align: center;
+}
+
+#product2{
+    grid-area: product2;
+    text-align: center;
+}
+
+#product3{
+    grid-area: product3;
+    text-align: center;
+}
+
+#healthy_options{
+    grid-area: healthy_options;
+    text-align: center;
+}
+
+#testimonials{
+    grid-area: testimonials;
+    text-align: center;
+}
+.responsive_flexbox{
+    grid-area: flexbox;
+    text-align: center;
+}
+
+/*imgs*/
+img{
+    max-width: 100%;
+}
+
+
+/*----FLEXBOX GALLERY----*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container img{
+    width: 200px;
+    margin: 10px;
+}
+
+.container img:hover{
+    transform: scale(1.05);
+}
+
+/*---GRID GALLERY---*/
+
+.gallery_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.gallery img{
+    max-width: 100%;
+}
+
+/*---RESPONSIVE GALLERY---*/
+
+.responsive_flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.responsive_flexbox img{
+    width: 200px;
+    margin: 10px;
+}
+
+.responsive_flexbox img:hover{
+    transform: scale(1.25);
+}
+
+/*------------------Media Query--------KEEP SEPERATE----*/
+@media screen and (max-width: 900px) {
+    #index_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+          'header   header'
+          'welcome  welcome'
+          'fairtrade    organic'
+          'local local'
+          'about_us    about_us'
+          'product1 product2'
+          'product3 product3'
+          'healthy_options  healthy_options'
+          'testimonials testimonials'
+        ;
+        justify-items: center;
+    }
+    
+    p{
+        margin: 0px 100px 0px 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #index_grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10,auto);
+        grid-template-areas:
+          'header'
+          'welcome'
+          'fairtrade'
+          'organic'
+          'local'
+          'about_us'
+          'product1'
+          'product2'
+          'product3'
+          'healthy_options'
+          'testimonials'
+        ;
+        justify-items: center;
+    }
+
+    .main_nav a{
+        padding: 60px 20px;
+    }
+}
